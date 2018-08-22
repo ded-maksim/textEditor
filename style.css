@@ -1,0 +1,132 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 55px;
+    background: #356493;
+    z-index: 1;
+}
+
+header > ul {
+    padding:10px;
+    text-align: center;
+}
+
+header > ul > li {
+    cursor: pointer;
+    background: #fcfcfc;
+    padding: 6px 8px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 18px;
+    margin: 0 5px;
+    border: 1px solid #efefef;
+    box-shadow: 3px 3px 10px -5px #000;
+    transition: background 0.2s ease-out;
+    position: relative;
+}
+
+header > ul > li:hover {
+    background: #efefef;
+}
+
+header > ul > li:nth-child(1) {
+    width: 170px;
+}
+
+header > ul > li:nth-child(2) {
+    width: 60px;
+}
+
+header > ul > li:nth-child(3) {
+    font-weight: bold;
+}
+
+header > ul > li:nth-child(4) {
+    font-style: italic;
+}
+
+header > ul > li:nth-child(5) {
+    text-decoration: underline;
+}
+
+header > ul > li:nth-child(6) {
+    color: blue;
+}
+
+header > ul > li:nth-child(7) > i {
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+.list {
+    position: absolute;
+    top: 38px;
+    left: 5px;
+    text-align: left;
+    list-style: none;
+    padding: 0px;
+    background: #efefef;
+    border-radius: 4px;
+    border: 1px solid #efefef;
+    box-shadow: 3px 3px 10px -5px #000;
+    transition: opacity 0.2s ease-out;
+    display: none;
+}
+
+.list > li {
+    font-size: 14px;
+    padding: 5px;
+    white-space: nowrap;
+}
+
+.list > li:hover {
+    background-color: #ddeeff;
+}
+
+header .active {
+    display: block;
+}
+
+main {
+    background: #efefef;
+    position: absolute;
+    top: 55px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+}
+
+.workSpace {
+    position: absolute;
+    left: 10%;
+    top: 5%;
+    width: 80%;
+    height: 90%;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0px 0px 30px #bcbcbc;
+    text-align: left;
+    border-radius: 5px;
+    overflow-y: scroll;
+}
+
+.workSpace::-webkit-scrollbar { width: 0; }
+
+.bold {
+    font-weight: bold;
+}
+.italic {
+    font-style: italic;
+}
+.underline {
+    text-decoration: underline;
+}
